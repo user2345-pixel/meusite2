@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seca Barriga - Promoção</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #1e1e1e; /* fundo escuro */
+      padding: 20px;
+      color: #ffffff; /* texto branco */
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      border: 1px solid #444;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #2a2a2a; /* fundo interno mais claro */
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .preco-antigo {
+      color: #ff4d4d;
+      font-weight: bold;
+      text-decoration: line-through;
+      font-size: 24px;
+    }
+    .preco-novo {
+      color: #00e676;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .garantia {
+      font-weight: bold;
+      color: #ddd;
+      margin-top: 10px;
+    }
+    .botao-comprar {
+      background-color: #3dbb3d;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .botao-comprar:hover {
+      background-color: #2c8f2c;
+    }
+    .perguntas {
+      margin-top: 30px;
+      text-align: left;
+    }
+    .perguntas p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    hr {
+      border: none;
+      border-top: 2px solid #ffffff;
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div style="text-align: center; padding: 20px 15px; background-color: transparent; border-radius: 10px; margin-bottom: 20px;">
+      <h1 style="font-size: 28px; font-weight: bold; color: #ffffff; margin-bottom: 10px;">
+        SEQUE SUA BARRIGA EM 7 DIAS COM RECEITAS MÁGICAS
+      </h1>
+      <p style="font-size: 16px; color: #ffffff;">
+        Tenha acesso a 15 receitas transformadoras para secar barriga em 7 dias, com um método rápido, objetivo e eficaz.
+      </p>
+    </div>
+
+    <div class="preco-antigo">DE R$97,00</div>
+    <div class="preco-novo">POR APENAS R$9,90</div>
+    <div class="garantia">E COM GARANTIA DE 15 DIAS!</div>
+    <button class="botao-comprar">COMPRAR AGORA</button>
+
+    <div class="perguntas">
+      <p>oque tomar para secar a barriga?</p>
+      <p>quais sao as etapas que devo seguir?</p>
+      <p>como perder a barriga em 7 dias?</p>
+      <p>quais benefios isso ira trazer para minha saude?</p>
+
+      <hr>
+
+      <div class="descricao">
+        <p><strong>Em apenas 7 dias?</strong></p>
+        <p>E o melhor, você não precisa fazer dietas restritivas, tomar remédios perigosos ou passar horas na academia para ver resultado.</p>
+        <p>Tudo o que você precisa fazer é seguir receitas simples e validadas.</p>
+        <p>É claro que conquistar uma barriga mais seca envolve vários fatores: o que você come, como combina os alimentos e até os horários… por isso mesmo eu reuni as 15 receitas que mais funcionam, testadas e aprovadas – é só seguir o passo a passo.</p>
+        <p>Mas sem dúvida nenhuma, ter clareza do que comer e praticidade no dia a dia vai te colocar na frente de 99% das pessoas que ainda estão tentando emagrecer no chute.</p>
+        <p><strong>Mas deixa eu te fazer algumas perguntas...</strong></p>
+        <p>🟢 O que você acha de aprender como secar a barriga de forma prática, gostosa e saudável?</p>
+        <p>🟢 O que você acha de ter acesso às 15 receitas que mais ajudaram minhas alunas a perder barriga sem passar fome?</p>
+        <p>🟢 E se você soubesse exatamente o que comer nos MÍNIMOS detalhes para ver resultado real em poucos dias?</p>
+        <p>Isso tornaria sua jornada mais leve e aumentaria suas chances de finalmente conquistar o corpo que você deseja?</p>
+        <p><strong>Pode ter certeza que sim.</strong></p>
+      </div>
+
+      <hr>
+
+      <div class="oque-recebe">
+        <h3>O QUE VOCÊ IRÁ RECEBER NESSE EBOOK</h3>
+        <p>✅ <strong>15 Receitas Poderosas para Secar Barriga de Forma Natural:</strong> Chega de dúvida! Você vai receber receitas testadas e aprovadas, perfeitas para quem quer eliminar gordura abdominal sem passar fome.</p>
+        <p>✅ <strong>Plano Alimentar Simples e de BAIXO CUSTO:</strong> Eu vou te mostrar como usar essas receitas no seu dia a dia, com ingredientes acessíveis e fáceis de preparar. Ideal para quem quer começar sem complicação!</p>
+        <p>✅ <strong>Como Combinar os Alimentos para Potencializar os Resultados:</strong> Tão importante quanto o que você come é como você come. Vou te mostrar como montar pratos que ativam o metabolismo e aceleram o emagrecimento.</p>
+        <p>✅ <strong>Organização Diária para Manter o Foco e Não Desistir:</strong> Você vai receber uma sugestão de rotina alimentar que cabe na sua agenda, para manter o foco mesmo com a correria do dia a dia!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
