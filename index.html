@@ -1,226 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubra o método natural que está ajudando milhares de pessoas a perder peso sem sofrimento. Sem dietas malucas. Sem academia. Resultados reais em poucas semanas.">
-    <meta name="theme-color" content="#27ae60">
-    <meta name="robots" content="index, follow">
-    
-    <title>Método Natural de Emagrecimento | Resultados Reais em Poucas Semanas</title>
-    
-    <!-- Manifest para PWA -->
-    <link rel="manifest" href="manifest.json">
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    
-    <!-- Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
-    <!-- AOS - Animate On Scroll -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
-    <!-- CSS Principal -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/pages/principal.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upsell - Mini Curso com Planejamento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #ffffff; /* fundo branco */
+      padding: 20px;
+      color: #333333; /* texto escuro */
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      border: 1px solid #dee2e6; /* borda cinza claro */
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f8f9fa; /* fundo interno cinza muito claro */
+      box-shadow: 0 0 10px rgba(0,0,0,0.1); /* sombra mais suave */
+    }
+    .preco-antigo { 
+      color: #ff4d4d;
+      font-weight: bold;
+      text-decoration: line-through;
+      font-size: 24px;
+    }
+    .preco-novo { 
+      color: #00e676;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .garantia {
+      font-weight: bold;
+      color: #555555; /* texto cinza escuro */
+      margin-top: 10px;
+    }
+    .botao-comprar { 
+      background-color: #3dbb3d;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .botao-comprar:hover { 
+      background-color: #2c8f2c;
+    }
+    .conteudo {
+      margin-top: 30px;
+      text-align: left;
+      color: #333333; 
+    }
+    .conteudo p, .conteudo li {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+     .conteudo h3 {
+        margin-top: 20px;
+        color: #3dbb3d; /* Verde para destacar */
+     }
+    hr {
+      border: none;
+      border-top: 1px solid #cccccc; /* linha cinza claro */
+      margin: 30px 0;
+    }
+    ul {
+        list-style: none; /* Remove marcadores padrão */
+        padding-left: 0;
+    }
+    li::before {
+        content: "✔ "; /* Adiciona checkmark verde */
+        color: #3dbb3d;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+  </style>
 </head>
-<body class="principal-page">
-    <!-- Header -->
-    <header class="principal-header">
-        <div class="container">
-            <div class="text-center">
-                <h1>Método Natural de Emagrecimento</h1>
-                <p>Transforme seu corpo e sua saúde de forma natural e duradoura</p>
-            </div>
-        </div>
-    </header>
-    
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <h2 class="headline" data-aos="fade-up">Descubra o Método Natural que Está Ajudando Milhares de Pessoas a Perder Peso Sem Sofrimento!</h2>
-            <p class="subheadline" data-aos="fade-up" data-aos-delay="200">Sem dietas malucas. Sem academia. Resultados reais em poucas semanas.</p>
-            
-            <div class="hero-image" data-aos="zoom-in" data-aos-delay="400">
-                <img src="assets/images/products/hero-image.jpg" alt="Pessoas felizes e saudáveis após usar nosso método" loading="lazy">
-            </div>
-        </div>
-    </section>
-    
-    <!-- Benefícios -->
-    <section class="benefits-section section">
-        <div class="container">
-            <div data-aos="fade-up">
-                <h3 class="section-title benefits-title">Benefícios Que Você Vai Conquistar</h3>
-                
-                <div class="benefits-grid">
-                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="benefit-icon">
-                            <i class="fas fa-weight-scale" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="benefit-title">Perda de Peso Natural</h4>
-                        <p>Emagreça de forma saudável e sustentável, sem efeito sanfona ou dietas restritivas.</p>
-                    </div>
-                    
-                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="benefit-icon">
-                            <i class="fas fa-bolt" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="benefit-title">Mais Energia</h4>
-                        <p>Sinta-se mais disposto e energizado para realizar suas atividades diárias com facilidade.</p>
-                    </div>
-                    
-                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="benefit-icon">
-                            <i class="fas fa-heart-pulse" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="benefit-title">Saúde Melhorada</h4>
-                        <p>Melhore seus indicadores de saúde como pressão arterial, glicemia e colesterol.</p>
-                    </div>
-                    
-                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
-                        <div class="benefit-icon">
-                            <i class="fas fa-brain" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="benefit-title">Clareza Mental</h4>
-                        <p>Desfrute de maior foco, concentração e clareza mental ao longo do dia.</p>
-                    </div>
-                    
-                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
-                        <div class="benefit-icon">
-                            <i class="fas fa-bed" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="benefit-title">Sono Reparador</h4>
-                        <p>Durma melhor e acorde mais disposto com nosso método natural de equilíbrio.</p>
-                    </div>
-                    
-                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="600">
-                        <div class="benefit-icon">
-                            <i class="fas fa-shirt" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="benefit-title">Autoestima Elevada</h4>
-                        <p>Recupere sua confiança e autoestima ao ver seu corpo se transformar semana após semana.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Depoimentos -->
-    <section class="testimonials-section section">
-        <div class="container">
-            <h3 class="section-title testimonials-title" data-aos="fade-up">O Que Dizem Nossos Clientes</h3>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                    <p class="testimonial-content">Já tinha tentado de tudo para emagrecer, mas sempre voltava ao peso inicial. Com esse método, perdi 12kg em 2 meses e, o melhor, já se passaram 6 meses e continuo mantendo o peso! É incrível como me sinto mais leve e disposta.</p>
-                    <div class="testimonial-author">
-                        <img src="assets/images/testimonials/maria.jpg" alt="Maria Silva" class="testimonial-avatar" loading="lazy">
-                        <div class="testimonial-info">
-                            <h4 class="testimonial-name">Maria Silva</h4>
-                            <p class="testimonial-meta">Perdeu 12kg em 2 meses</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                    <p class="testimonial-content">Aos 45 anos, meu metabolismo estava lento e nada funcionava. Esse método me ensinou a comer de forma inteligente e a ativar meu metabolismo naturalmente. Perdi 8kg e minha pressão arterial normalizou!</p>
-                    <div class="testimonial-author">
-                        <img src="assets/images/testimonials/carlos.jpg" alt="Carlos Oliveira" class="testimonial-avatar" loading="lazy">
-                        <div class="testimonial-info">
-                            <h4 class="testimonial-name">Carlos Oliveira</h4>
-                            <p class="testimonial-meta">Perdeu 8kg e normalizou a pressão</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-                    <p class="testimonial-content">Como mãe de 3 filhos, não tinha tempo para academia. Esse método se encaixou perfeitamente na minha rotina. Perdi 15kg em 3 meses sem passar fome ou fazer exercícios intensos. Minha família está impressionada!</p>
-                    <div class="testimonial-author">
-                        <img src="assets/images/testimonials/ana.jpg" alt="Ana Paula" class="testimonial-avatar" loading="lazy">
-                        <div class="testimonial-info">
-                            <h4 class="testimonial-name">Ana Paula</h4>
-                            <p class="testimonial-meta">Perdeu 15kg em 3 meses</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Garantia -->
-    <section class="guarantee-wrapper section">
-        <div class="container">
-            <div class="guarantee-section" data-aos="fade-up">
-                <div class="guarantee-icon">
-                    <i class="fas fa-shield-halved" aria-hidden="true"></i>
-                </div>
-                <div class="guarantee-content">
-                    <h3 class="guarantee-title">Garantia Incondicional de 7 Dias</h3>
-                    <p class="guarantee-text">Estamos tão confiantes que nosso método vai funcionar para você que oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo você não ficar satisfeito, basta nos enviar um e-mail e devolveremos 100% do seu investimento. Sem perguntas, sem burocracia.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CTA Section -->
-    <section class="cta-section section">
-        <div class="container">
-            <h3 class="cta-title" data-aos="fade-up">Pronto Para Transformar Seu Corpo e Sua Saúde?</h3>
-            
-            <div class="price-comparison" data-aos="fade-up" data-aos-delay="100">
-                <span class="original-price">R$ 197,00</span>
-                <span class="current-price">R$ 97,00</span>
-            </div>
-            
-            <a href="#" class="cta-button pulse" data-aos="zoom-in" data-aos-delay="200">
-                🟩 Quero Esse Acesso Agora!
-            </a>
-            
-            <p class="cta-subtext" data-aos="fade-up" data-aos-delay="300">
-                Pagamento único e seguro. Acesso imediato após a confirmação.
-            </p>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="footer section">
-        <div class="container text-center">
-            <p>&copy; 2025 Método Natural de Emagrecimento. Todos os direitos reservados.</p>
-            <p>
-                <a href="#">Termos de Uso</a> | 
-                <a href="#">Política de Privacidade</a>
-            </p>
-        </div>
-    </footer>
-    
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-        // Inicializar AOS
-        AOS.init({
-            duration: 800,
-            once: true,
-            disable: 'mobile' // Desativa em dispositivos móveis para melhor performance
-        }) ;
-        
-        // Registrar Service Worker para PWA
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                    console.log('ServiceWorker registrado com sucesso: ', registration.scope);
-                }).catch(function(err) {
-                    console.log('Falha ao registrar ServiceWorker: ', err);
-                });
-            });
-        }
-    </script>
+<body>
+  <div class="container">
+
+    <div style="text-align: center; padding: 20px 15px; background-color: transparent; border-radius: 10px; margin-bottom: 20px;">
+      <h1 style="font-size: 28px; font-weight: bold; color: #333333; margin-bottom: 10px;">
+        OFERTA ESPECIAL: POTENCIALIZE SEUS RESULTADOS! 🚀
+      </h1>
+      <p style="font-size: 18px; color: #555555;">
+        Adicione o <strong>Mini Curso com Planejamento Estratégico</strong> ao seu pedido e acelere sua transformação!
+      </p>
+    </div>
+
+    <div class="preco-antigo">DE R$147,00</div>
+    <div class="preco-novo">POR APENAS R$49,90</div>
+    <div class="garantia">OFERTA ÚNICA - NÃO PERCA!</div>
+    <button class="botao-comprar">SIM, QUERO O MINI CURSO AGORA!</button>
+
+    <div class="conteudo">
+      <hr>
+      <h3>O QUE VOCÊ VAI RECEBER NO MINI CURSO:</h3>
+      <ul>
+        <li><strong>Planejamento Semanal Detalhado:</strong> Um guia passo a passo para organizar suas refeições e rotina, maximizando a queima de gordura.</li>
+        <li><strong>Vídeo-Aulas Exclusivas:</strong> Aprenda estratégias avançadas e dicas práticas para otimizar seu processo de emagrecimento.</li>
+        <li><strong>Guia de Exercícios Rápidos:</strong> Rotinas curtas e eficazes que você pode fazer em casa para complementar as receitas.</li>
+        <li><strong>Mentalidade Vencedora:</strong> Técnicas para manter a motivação e superar os desafios durante sua jornada.</li>
+        <li><strong>Acesso a Materiais Bônus:</strong> Planilhas, checklists e guias para facilitar sua organização.</li>
+      </ul>
+      
+      <p>Este mini curso é o complemento perfeito para as receitas que você acabou de adquirir. Com ele, você terá um plano completo e direcionado para alcançar seus objetivos de forma mais rápida e sustentável.</p>
+      
+      <p><strong>Não deixe essa oportunidade passar!</strong> Adicione agora mesmo o Mini Curso com Planejamento por um preço exclusivo.</p>
+      
+      <hr>
+      
+      <div style="text-align: center;">
+          <button class="botao-comprar">ADICIONAR AO MEU PEDIDO POR R$49,90</button>
+          <p style="margin-top: 15px; font-size: 14px; color: #777;"><a href="#" style="color: #777; text-decoration: underline;">Não, obrigado. Prefiro continuar apenas com as receitas.</a></p> 
+          </div>
+
+    </div>
+  </div>
 </body>
 </html>
+
