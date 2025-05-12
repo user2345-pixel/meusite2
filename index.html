@@ -1,228 +1,103 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oferta Especial - Plano de Emagrecimento Acelerado</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oferta Especial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        :root {
-            --bs-primary-rgb: 25, 135, 84;
-            --bs-danger-rgb: 220, 53, 69;
-            --bs-dark-rgb: 33, 37, 41;
-            --bs-light-rgb: 248, 249, 250;
-        }
+      body {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
 
-        body {
-            background-color: #ffffff;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            color: #212529;
-            line-height: 1.6;
-        }
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
 
-        .top-warning-banner {
-            background-color: rgb(var(--bs-danger-rgb));
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            font-weight: bold;
-            font-size: 1.1em;
-            position: sticky;
-            top: 0;
-            z-index: 1030;
-            width: 100%;
-        }
+      h1 {
+        font-size: 28px;
+        color: #333;
+      }
 
-        .offer-section {
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 40px;
-            margin-top: 80px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            text-align: center;
-            border: 1px solid #dee2e6;
-        }
+      p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 30px;
+      }
 
-        h1 {
-            font-size: 2.3em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: rgb(var(--bs-dark-rgb));
-        }
+      .btn {
+        display: inline-block;
+        background-color: #ff6b00;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 14px 28px;
+        border-radius: 6px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
 
-        h2 {
-            font-size: 1.7em;
-            font-weight: 600;
-            margin-top: 35px;
-            margin-bottom: 20px;
-            color: rgb(var(--bs-dark-rgb));
-        }
+      .btn:hover {
+        background-color: #e65c00;
+      }
 
-        h3 {
-            font-size: 1.4em;
-            font-weight: 600;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            color: rgb(var(--bs-dark-rgb));
-        }
+      .decline-link {
+        display: block;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #888;
+        text-decoration: none;
+      }
 
-        p {
-            color: #495057;
-            font-size: 1.05em;
-            margin-bottom: 18px;
-        }
-
-        .lead {
-            font-size: 1.15em;
-            font-weight: 400;
-        }
-
-        .old-price {
-            text-decoration: line-through;
-            color: rgb(var(--bs-danger-rgb));
-            font-size: 1.3em;
-            font-weight: 500;
-        }
-
-        .new-price {
-            color: rgb(var(--bs-primary-rgb));
-            font-size: 3em;
-            font-weight: 700;
-            margin: 5px 0 10px 0;
-        }
-
-        .cta-button {
-            background: linear-gradient(180deg, #1db954, #1aa34a);
-            border: none;
-            color: white;
-            font-size: 1.4em;
-            padding: 20px 40px;
-            font-weight: 700;
-            border-radius: 8px;
-            transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-            width: 100%;
-            max-width: 480px;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            box-shadow: 0 5px 15px rgba(25, 135, 84, 0.35);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .cta-button:hover {
-            background: linear-gradient(180deg, #1aa34a, #15803d);
-            color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(25, 135, 84, 0.45);
-        }
-
-        .benefits-list {
-            padding-left: 0;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-
-        .benefits-list li {
-            text-align: left;
-            margin-bottom: 18px;
-            font-size: 1.05em;
-            list-style: none;
-            padding-left: 35px;
-            position: relative;
-            color: #343a40;
-        }
-
-        .benefits-list li::before {
-            content: '\2714';
-            color: rgb(var(--bs-primary-rgb));
-            font-weight: bold;
-            position: absolute;
-            left: 5px;
-            top: 3px;
-            font-size: 1.2em;
-        }
-
-        .urgent-text {
-            color: rgb(var(--bs-danger-rgb));
-            font-weight: 600;
-        }
-
-        .footer {
-            margin-top: 60px;
-            padding: 25px 0;
-            color: #6c757d;
-            font-size: 0.9em;
-            text-align: center;
-            border-top: 1px solid #dee2e6;
-            background-color: rgb(var(--bs-light-rgb));
-            width: 100%;
-        }
-
-        .decline-link a {
-            color: #6c757d !important;
-            text-decoration: underline;
-            font-size: 0.9em;
-        }
-
-        .decline-link a:hover {
-            color: #495057 !important;
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+      .decline-link:hover {
+        color: #555;
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
-    <div class="top-warning-banner">
-        ATENÇÃO: NÃO FECHE OU ATUALIZE ESTA PÁGINA! OFERTA ÚNICA!
-    </div>
-
+  </head>
+  <body>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="offer-section">
-                    <h1><span class="urgent-text">ESPERE!</span> Sua Transformação Está Quase Completa!</h1>
-                    <p class="lead mb-4">Você deu o primeiro passo incrível para emagrecer, mas e se eu te dissesse que você pode <strong class="urgent-text">ACELERAR seus resultados em até 10x</strong> e tornar sua jornada <strong class="urgent-text">MUITO MAIS FÁCIL?</strong></p>
-
-                    <p>Imagine ter um <strong style="color: #198754;">PLANO ESTRATÉGICO COMPLETO</strong>, guiando cada passo seu, eliminando as dúvidas e garantindo que você alcance o corpo dos seus sonhos de forma <strong style="color: #198754;">rápida e definitiva!</strong></p>
-
-                    <h2>Apresentando: O Mini Curso de Planejamento de Emagrecimento Estratégico!</h2>
-                    <p>Este não é apenas um curso, é o <strong class="urgent-text">MAPA COMPLETO</strong> que faltava para sua transformação total. Veja o que você vai destravar <strong class="urgent-text">AGORA MESMO:</strong></p>
-
-                    <ul class="benefits-list mt-4 mb-4">
-                        <li><strong>Planejamento Semanal Detalhado:</strong> Chega de adivinhações! Saiba exatamente o que comer e quando, otimizando sua queima de gordura 24/7.</li>
-                        <li><strong>Vídeo-Aulas Exclusivas e Direto ao Ponto:</strong> Aprenda segredos e estratégias que ninguém te conta para turbinar seu metabolismo.</li>
-                        <li><strong>Guia de Exercícios Rápidos e Poderosos:</strong> Rotinas eficazes para fazer em casa, queimar calorias e tonificar seu corpo em minutos.</li>
-                        <li><strong>Mentalidade Inabalável:</strong> Desenvolva o foco e a motivação de um campeão para superar qualquer obstáculo.</li>
-                        <li><strong>Acesso VIP a Materiais Bônus:</strong> Ferramentas práticas (planilhas, checklists) para simplificar sua organização e garantir seu sucesso.</li>
-                    </ul>
-
-                    <p>Este Mini Curso é o <strong style="color: #198754;">complemento PERFEITO</strong> para as receitas que você já garantiu. É a chave para transformar informação em <strong class="urgent-text">RESULTADOS REAIS E VISÍVEIS!</strong></p>
-
-                    <hr class="my-4">
-
-                    <h3>OFERTA ÚNICA E IRRESISTÍVEL - <span class="urgent-text">SÓ PARA VOCÊ, SÓ AGORA!</span></h3>
-                    <p>Normalmente, este plano estratégico completo custaria <span class="old-price">R$149,90</span>. Mas porque você já demonstrou seu compromisso com sua saúde, quero te dar um presente...</p>
-                    <p>Adicione o Mini Curso ao seu pedido <strong class="urgent-text">AGORA</strong> por apenas:</p>
-                    <div class="new-price">R$47,00</div>
-                    <p>(Pagamento Único - Acesso Vitalício!)</p>
-
-                    <a href="https://pay.kiwify.com.br/qath8hO" class="btn btn-success cta-button">SIM! QUERO ACELERAR MEUS RESULTADOS AGORA!</a>
-
-                    <p class="mt-3 decline-link"><small><a href="#recusar-oferta" class="text-muted text-decoration-underline">Não, obrigado, prefiro seguir sem o plano completo e correr o risco de demorar mais para ter resultados.</a></small></p>
-                </div>
-            </div>
-        </div>
+      <h1>Oferta Especial Somente Hoje!</h1>
+      <p>
+        Adquira agora o plano completo com cardápio + lista de compras por
+        apenas <strong>R$ 7,00</strong>.
+      </p>
+      <a
+        href="https://pay.kiwify.com.br/qath8hO"
+        class="btn"
+        target="_blank"
+        >QUERO APROVEITAR A OFERTA</a
+      >
+      <p class="mt-3 decline-link">
+        <small>
+          <a
+            href="https://user2345-pixel.github.io/site33/"
+            class="text-muted text-decoration-underline"
+          >
+            Não, obrigado, prefiro seguir sem o plano completo e correr o risco
+            de demorar mais para ter resultados.
+          </a>
+        </small>
+      </p>
     </div>
-
-    <div class="footer">
-        Seu Nome/Empresa | Todos os direitos reservados
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
+
 
 
 
